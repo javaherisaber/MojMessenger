@@ -1,0 +1,70 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    tools:context=".contact.FragmentHomeContactList">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView_contact_online_label"
+            android:background="@drawable/shape_rectangle_header"
+            android:text="@string/online_contacts"
+            android:textColor="@android:color/background_light"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recView_online_contacts"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtView_contact_online_empty"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@string/contact_list_online_empty_message"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/txtView_contact_all_label"
+            android:background="@drawable/shape_rectangle_header"
+            android:text="@string/all_contacts"
+            android:textColor="@android:color/background_light"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recView_all_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ProgressBar
+            android:id="@+id/progress_contact_all"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/txtView_contact_all_empty"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="@string/contact_list_all_empty_message"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

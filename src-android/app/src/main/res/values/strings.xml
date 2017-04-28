@@ -1,0 +1,165 @@
+<resources>
+    <!-- app specific -->
+    <string name="app_name">MojMessenger</string>
+    <string name="app_package">ir.logicbase.mojmessenger</string>
+
+    <!-- layout and code -->
+    <string name="activity_home_bottom_navigation_conversation">مکالمات</string>
+    <string name="activity_home_bottom_navigation_contacts">مخاطبین</string>
+    <string name="intro_welcome">به موج مسنجر خوش آمدید</string>
+    <string name="intro_inform_easily">به آسانی و با سرعت از دوستان خود مطلع شوید</string>
+    <string name="intro_share_anything">فایل های خود را به اشتراک بگذارید</string>
+    <string name="intro_join_favorite">در گروه های مورد علاقه خود گفتگو کنید</string>
+    <string name="intro_btn_continue">ادامه</string>
+    <string name="input_warning1">به منظور استفاده از برنامه شماره خود را وارد کنید</string>
+    <string name="input_edt_hint">شماره تلفن خود را وارد کنید</string>
+    <string name="input_btn_send">دریافت کد فعالسازی</string>
+    <string name="verify_message1">کد فعالسازی تا چند لحظه دیگر به شما پیامک میشود</string>
+    <string name="verify_message2">به محض دریافت آن را در کادر زیر وارد کنید</string>
+    <string name="verify_expire_message">زمان انقضای کد</string>
+    <string name="verify_example_timer">120 ثانیه</string>
+    <string name="verify_wrong_number">شماره خود را اشتباه وارد کردید ؟</string>
+    <string name="verify_btn_verify">اعتبارسنجی</string>
+    <string name="prof_verify_edt_first">نام خود را وارد کنید</string>
+    <string name="prof_verify_edt_last">نام خانوادگی را وارد کنید</string>
+    <string name="prof_verify_btn_start">شروع</string>
+    <string name="online">آنلاین</string>
+    <string name="all_contacts">همه مخاطبین</string>
+    <string name="online_contacts">مخاطبین آنلاین</string>
+    <string name="last_seen_label">آخرین بازدید :</string>
+    <string name="activation_code">کد فعالسازی</string>
+    <string name="message">پیام</string>
+    <string name="send">ارسال</string>
+    <string name="twelve_o_clock">12:00</string>
+    <string name="search">جستجو</string>
+    <string name="font_iran_sans">IRAN Sans</string>
+    <string name="coming_soon">به زودی</string>
+    <string name="guide">راهنمایی</string>
+    <string name="request_read_contacts_guide">برای مشاهده ی لیست مخاطبین نیاز به اجازه ی دسترسی میباشد ، از طریق دکمه ی تنظیمات در زیر دسترسی به مخاطبین را فعال نمایید</string>
+    <string name="request_write_external_storage_guide">برای ذخیره فایل نیاز به اجازه ی دسترسی میباشد ، از طریق دکمه ی تنظیمات در زیر دسترسی به حافظه را فعال نمایید</string>
+    <string name="rename">تغییر نام</string>
+    <string name="settings">تنظیمات</string>
+    <string name="done">تایید</string>
+    <string name="explanation_sign_out">با خروج از حساب کاربری سابقه ی چت شما باقی می ماند و هر زمان که دوباره با این شماره وارد شوید میتوانید به آنها ادامه دهید \n خارج میشوید ؟</string>
+
+    <!-- Settings preferences keys -->
+    <string name="pref_notification_alert">prefNotificationAlert</string>
+    <string name="pref_vibrate_alert">prefVibrateAlert</string>
+    <string name="pref_background_pic">prefBackgroundPic</string>
+    <string name="pref_conversation_font_size">prefConversationFontSize</string>
+    <string name="pref_sign_out">prefSignOut</string>
+    <string name="pref_about_us">prefAboutUs</string>
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="no">خیر</string>
+    <string name="yes">بله</string>
+    <string name="change">تغییر</string>
+    <string name="reset">بازنشانی</string>
+    <string name="menu_profile_edit_contact">ویرایش</string>
+    <string name="menu_profile_delete_contact">حذف</string>
+    <string name="phone_number">شماره تلفن</string>
+    <string name="dialog_new_contact_first_name">نام</string>
+    <string name="dialog_new_contact_last_name">نام خانوادگی (اختیاری)</string>
+    <string name="dialog_new_contact_phone">شماره تلفن</string>
+    <string name="abort">انصراف</string>
+    <string name="dialog_new_contact_create">ایجاد مخاطب</string>
+    <string name="dialog_new_contact_title">مخاطب جدید</string>
+    <string name="dialog_new_contact_successful">مخاطب جدید به لیست اضافه شد</string>
+    <string name="dialog_new_contact_check_inputs">ورودی های خود را کنترل کنید</string>
+    <string name="chat_list_empty_message">گفتگویی ایجاد نشده</string>
+    <string name="contact_list_online_empty_message">مخاطبی آنلاین نیست</string>
+    <string name="contact_list_all_empty_message">مخاطبی یافت نشد</string>
+
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+</resources>

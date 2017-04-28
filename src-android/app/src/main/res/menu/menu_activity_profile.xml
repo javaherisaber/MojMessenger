@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ir.logicbase.mojmessenger.activity.ActivityProfile">
+    <item
+        android:id="@+id/action_edit"
+        android:orderInCategory="1"
+        android:title="@string/menu_profile_edit_contact"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete"
+        android:orderInCategory="2"
+        android:title="@string/menu_profile_delete_contact"
+        app:showAsAction="never" />
+</menu>

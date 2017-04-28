@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    tools:context="ir.logicbase.mojmessenger.conversation.ActivityConversation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress_conversation"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/txtView_conversation_list_empty"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:text="@string/chat_list_empty_message"
+        android:textColor="@android:color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_conversation" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recView_conversation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:scrollbars="vertical" />
+
+        <LinearLayout
+            android:id="@+id/lnLayout_message_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edText_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:hint="@string/message"
+                android:imeOptions="actionNone"
+                android:inputType="textMultiLine" />
+
+            <ImageView
+                android:contentDescription="@string/send"
+                android:id="@+id/btn_send_message"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_send_message" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

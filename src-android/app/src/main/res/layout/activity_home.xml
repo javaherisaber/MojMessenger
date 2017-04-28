@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    tools:context="ir.logicbase.mojmessenger.home.ActivityHome"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_home" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/homePager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_home"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@drawable/ic_fab_add" />
+        </RelativeLayout>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/btnNavigation_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/bottom_navigation_home" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

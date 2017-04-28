@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:moj="http://schemas.android.com/apk/res/ir.logicbase.mojmessenger">
+
+    <ir.logicbase.mojmessenger.settings.preference.CustomPreferenceCategory android:title="تنظیمات اعلان">
+
+        <ir.logicbase.mojmessenger.settings.preference.CustomSwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/pref_notification_alert"
+            android:title="اعلان پیام جدید" />
+
+        <Preference android:layout="@layout/item_preference_divider" />
+
+        <ir.logicbase.mojmessenger.settings.preference.CustomSwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/pref_vibrate_alert"
+            android:title="هشدار ویبره" />
+
+        <Preference android:layout="@layout/item_preference_space" />
+
+    </ir.logicbase.mojmessenger.settings.preference.CustomPreferenceCategory>
+
+    <ir.logicbase.mojmessenger.settings.preference.CustomPreferenceCategory android:title="دیگر تنظیمات">
+
+        <ir.logicbase.mojmessenger.settings.preference.CustomIntentPreference
+            android:defaultValue="null"
+            android:key="@string/pref_background_pic"
+            android:summary="این تصویر در صفحه ی مکالمه استفاده میشود"
+            android:title="تصویر پشت زمینه چت" />
+
+        <Preference android:layout="@layout/item_preference_divider" />
+
+        <ir.logicbase.mojmessenger.settings.preference.CustomNumberPickerPreference
+            android:defaultValue="16"
+            android:key="@string/pref_conversation_font_size"
+            android:summary="16"
+            android:title="اندازه فونت پیام ها"
+            moj:maxValue="40"
+            moj:minValue="16" />
+        <!-- minValue and maxValue are custom attributes defined in values/attrs.xml -->
+
+        <Preference android:layout="@layout/item_preference_divider" />
+
+        <ir.logicbase.mojmessenger.settings.preference.CustomIntentPreference
+            android:key="@string/pref_sign_out"
+            android:summary="از حساب با شماره ی فعلی خارج میشوید"
+            android:title="خروج از حساب" />
+
+        <Preference android:layout="@layout/item_preference_divider" />
+
+        <ir.logicbase.mojmessenger.settings.preference.CustomIntentPreference
+            android:key="@string/pref_about_us"
+            android:title="درباره ی برنامه">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetClass="ir.logicbase.mojmessenger.about.ActivityAbout"
+                android:targetPackage="ir.logicbase.mojmessenger" />
+        </ir.logicbase.mojmessenger.settings.preference.CustomIntentPreference>
+
+    </ir.logicbase.mojmessenger.settings.preference.CustomPreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

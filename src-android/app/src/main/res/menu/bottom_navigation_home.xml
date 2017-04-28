@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_private"
+        android:icon="@drawable/ic_pv_chat_black_24dp"
+        android:title="@string/activity_home_bottom_navigation_conversation" />
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/ic_contacts_black_24dp"
+        android:title="@string/activity_home_bottom_navigation_contacts"/>
+
+</menu>

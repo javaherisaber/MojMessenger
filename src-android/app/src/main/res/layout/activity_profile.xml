@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="ir.logicbase.mojmessenger.profile.ActivityProfile">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_profile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_profile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center|right"
+                android:orientation="horizontal"
+                android:fitsSystemWindows="true"
+                android:layout_marginLeft="54dp"
+                android:layout_marginRight="54dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="مهدی جواهری"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/subTitle_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="آنلاین"
+                        android:textColor="#FFFFB8A2"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imView_profile_pic"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/default_person_pic"
+                        app:civ_border_color="#000000"
+                        app:civ_border_width="1dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_activity_profile" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@android:color/white"
+        app:layout_anchor="@id/app_bar_profile"
+        app:layout_anchorGravity="bottom|left"
+        app:srcCompat="@drawable/ic_message_black_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>

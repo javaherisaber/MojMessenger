@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="msg_date">#3f7cb5</color>
+    <color name="msg_text">#000000</color>
+    <color name="conversation_last_seen">#BBBBBB</color>
+    <color name="setting_preference_title">#000000</color>
+    <color name="setting_preference_summary">#6f6f6f</color>
+    <color name="sms_verify_wrong_number_bg">#66FFFFFF</color>
+
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="transparent_background">#4D000000</color>
+
+    <color name="black_overlay">#66000000</color>
+
+</resources>
